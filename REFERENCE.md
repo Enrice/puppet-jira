@@ -1115,8 +1115,8 @@ an array of hashes defining custom plugins to install
 a single plugin configuration will has the following form
   installation_name: this name wil be used to install the plugin within jira
   source: url of plugin to be fetched
-  username: the username for authentification, if necessary
-  password: the password for authentification, if necessary
+  username: the username for authentication, if necessary
+  password: the password for authentication, if necessary
   checksum: the checksum of the plugin, to determine the need for an upgrade
   checksumtype: the type of checksum used (none|md5|sha1|sha2|sha256|sha384|sha512). (default: none)
 
@@ -1152,7 +1152,7 @@ Default value: `undef`
 
 Java Virtual Machine (JVM) types
 
-Alias of `Enum['openjdk-11', 'oracle-jdk-1.8']`
+Alias of `Enum['openjdk-11', 'oracle-jdk-1.8', 'openjdk-17']`
 
 ### <a name="Jira--Tomcat_attributes"></a>`Jira::Tomcat_attributes`
 
