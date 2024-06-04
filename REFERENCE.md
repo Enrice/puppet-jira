@@ -936,7 +936,7 @@ Data type: `String`
 
 Format string for Tomcat access log
 
-Default value: `'%a %{jira.request.id}r %{jira.request.username}r %t &quot;%m %U%q %H&quot; %s %b %D &quot;%{Referer}i&quot; &quot;%{User-Agent}i&quot; &quot;%{jira.request.assession.id}r&quot;'`
+Default value: `'%a %{jira.request.id}r %{jira.request.username}r %t &quot;%m %U%{sanitized.query}r %H&quot; %s %b %D &quot;%{sanitized.referer}r&quot; &quot;%{User-Agent}i&quot; &quot;%{jira.request.assession.id}r&quot;'`
 
 ##### <a name="-jira--tomcat_accesslog_enable_xforwarded_for"></a>`tomcat_accesslog_enable_xforwarded_for`
 
